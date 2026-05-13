@@ -7,6 +7,13 @@ requires-python = ">=3.13"
 dependencies = [
     "aerich>=0.8.1",
     "fastapi[standard]>=0.136.1",
+    "python-dotenv>=1.2.2",
+    "tomlkit>=0.15.0",
     "tortoise-orm[asyncpg]>=1.1.7",
     "uvicorn[standard]>=0.46.0",
 ]
+
+[tool.aerich]
+tortoise_orm = "database.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
