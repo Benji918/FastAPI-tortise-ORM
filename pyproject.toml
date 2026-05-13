@@ -1,0 +1,12 @@
+[project]
+name = "fastapi-tortise-orm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aerich>=0.8.1",
+    "fastapi[standard]>=0.136.1",
+    "tortoise-orm[asyncpg]>=1.1.7",
+    "uvicorn[standard]>=0.46.0",
+]
