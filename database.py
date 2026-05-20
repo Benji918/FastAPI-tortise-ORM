@@ -22,6 +22,6 @@ def init_db(app: FastAPI) -> None:
                       modules={"models": ["models"]},
                       generate_schemas=True,
                       add_exception_handlers=True,
-                      timezone="UTC"
+                    #   timezone="UTC"
                        )
     
